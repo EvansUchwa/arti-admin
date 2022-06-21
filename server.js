@@ -40,8 +40,8 @@ app.get('/fcmToken/get', (req, res) => {
 
 })
 
-
-app.listen(8085, (error) => {
+const appPort = process.env.PORT || 8085;
+app.listen(appPort, (error) => {
     if (error) {
         return console.log('une erreur est survenue bg')
     }
