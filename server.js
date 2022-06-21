@@ -8,12 +8,20 @@ app.use(cors())
 app.use(express.json())
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCaFIJ_bto6XBOuc5Rt7NbTsYYvo5omFx4",
-    authDomain: "artistore-ec301.firebaseapp.com",
-    projectId: "artistore-ec301",
-    storageBucket: "artistore-ec301.appspot.com",
-    messagingSenderId: "593171698780",
-    appId: "1:593171698780:web:9b415e6672b15ab904c299"
+    apiKey: "AIzaSyCMqaGo8dLe7dpRxpHR0HnAUNpd22AyWB4",
+
+    authDomain: "artiweb-bd017.firebaseapp.com",
+
+    projectId: "artiweb-bd017",
+
+    storageBucket: "artiweb-bd017.appspot.com",
+
+    messagingSenderId: "150139238820",
+
+    appId: "1:150139238820:web:f25c407f6bebac50d1a931",
+
+    measurementId: "G-ZKY2HJ04FY"
+
 };
 // Initialize Firebase
 
