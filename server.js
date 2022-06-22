@@ -33,8 +33,9 @@ app.post('/fcmToken/add', (req, res) => {
     const firebase = initializeApp(firebaseConfig);
     //Initialize Firestore
     const fireBase = getFirestore(firebase);
+    const { fcmToken, macAddress } = req.body
     // Add a new document in collection "cities"
-    setDoc(doc(fireBase, "tokens", "fcmToken"), { fcToken: req.body.fcmToken }).then(() => {
+    setDoc(doc(fireBase, "tokens", macAddress), { fcmToken }).then(() => {
         console.log('ici la requete')
         res.send("token saved")
 
